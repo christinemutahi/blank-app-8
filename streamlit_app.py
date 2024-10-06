@@ -18,7 +18,7 @@ kmeans = KMeans(n_clusters=n_clusters)
 data['Cluster'] = kmeans.fit_predict(X)
 
 # Plot the clusters
-fig = px.scatter(df, 
+fig = px.scatter(data, 
                  x='Annual Income (k$)', 
                  y='Spending Score (1-100)', 
                  color='Cluster', 
